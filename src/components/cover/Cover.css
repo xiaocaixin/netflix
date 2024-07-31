@@ -1,0 +1,39 @@
+.Cover-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: var(--red-color);
+}
+
+.Cover-logo {
+  width: 800px;
+  height: 216.2px;
+}
+
+.Cover-title {
+  font-size: 144px;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: transform 0.2s;
+}
+
+.Cover-title:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .Cover-title:hover {
+    animation: Cover-title-spin infinite 1s linear;
+  }
+}
+
+@keyframes Cover-title-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

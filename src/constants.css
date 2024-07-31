@@ -1,0 +1,11 @@
+:root {
+  --black-color: #141414;
+  --black-background-color: #000000;
+  /* --black-background-color: red; */
+  --red-color: #e50914;
+  --red-hover-color: #c11119;
+  --white-color: #ffffff;
+  --grey-color: #6d6d6e;
+  --grey-text-color: #b3b3b3;
+  --blue-color: #448ef4;
+}

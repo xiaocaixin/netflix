@@ -1,0 +1,150 @@
+.landing-container {
+  background-color: var(--black-background-color);
+}
+.hero-1-container {
+  width: 100%;
+  height: 100%;
+  color: var(--red-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-1-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.3;
+  -webkit-mask: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 50%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  mask: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 50%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+}
+
+.hero-1-info {
+  position: absolute;
+  color: var(--white-color);
+}
+
+.hero-1-subtitle {
+  color: var(--white-color);
+  font-size: 1.3rem;
+}
+
+.hero-1-email-container {
+  padding-top: 1rem;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.email-input-container {
+  height: 35px;
+  padding-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-direction: row;
+}
+
+.email-input {
+  height: 100%;
+  width: 275px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 0.2rem;
+  border-color: var(--white-color);
+  color: var(--white-color);
+  padding-left: 16px;
+}
+
+.hero-1-email-btn {
+  height: 100%;
+  background-color: var(--red-color);
+  color: var(--white-color);
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  padding: 0px 18px;
+}
+
+.hero-1-email-btn:hover {
+  background-color: var(--red-hover-color);
+  cursor: pointer;
+}
+
+.hero-2-container {
+  color: var(--white-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 4, 19, 0.6),
+    rgb(14, 27, 79, 0.6),
+    rgb(229, 9, 20, 0.6),
+    rgb(14, 27, 79, 0.6),
+    rgba(0, 4, 19, 0.6)
+  );
+}
+
+.hero-2-info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 4px;
+  font-size: 18px;
+}
+
+.hero-2-info-link {
+  margin-top: 4px;
+  padding: 0;
+  text-decoration: underline;
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: var(--blue-color);
+}
+.hero-3-containers {
+  background-color: var(--black-background-color);
+}
+
+.hero-3-container {
+  background-color: inherit;
+  margin: 0px 250px;
+  height: 410px;
+  display: flex;
+  align-items: center;
+}
+
+.hero-img {
+  background-size: cover;
+}
+
+.hero-3-info {
+  text-align: left;
+  word-wrap: break-word;
+  color: var(--white-color);
+}
+
+.hero-3-subTitle {
+  font-size: 1.3rem;
+}
+
+.hero-3-left {
+  order: 1;
+  width: 50%;
+}
+
+.hero-3-right {
+  order: 2;
+  width: 50%;
+}

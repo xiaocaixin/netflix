@@ -1,0 +1,67 @@
+.navBar-container {
+  width: 80%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 24px;
+  position: absolute; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+.navBar-logo:hover {
+  cursor: grab;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .navBar-logo:hover {
+    animation: navBar-logo-spin infinite 1s linear;
+  }
+}
+
+@keyframes navBar-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.navBar-right {
+  display: flex;
+  height: 32px;
+}
+
+.navBar-btn {
+  margin: 0px 24px;
+  background-color: var(--red-color);
+  color: var(--white-color);
+  border-radius: 4px;
+  border: none;
+  padding: 7px 16px;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navBar-btn:hover {
+  background-color: var(--red-hover-color);
+  cursor: pointer;
+}
+
+.navBar-select {
+  cursor: pointer;
+  height: 100%;
+  padding: 0px 8px;
+  background-color: rgba(84, 84, 84, 0.5);
+  color: var(--white-color);
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 4px;
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.navBar-option {
+  background-color: rgba(84, 84, 84, 1);
+  color: var(--white-color);
+}
